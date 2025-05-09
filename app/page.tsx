@@ -45,7 +45,7 @@ export default function Home() {
             </h2>
             <div className="jp-line" role="presentation"></div>
             <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
-              A Semi Senior Frontend Software Developer dedicated to driving
+              A Frontend Software Developer dedicated to driving
               transformative impact by building bridges between innovative
               technology and tangible business growth. My mission is to
               architect high-performance, accessible, and intuitive digital
@@ -86,11 +86,6 @@ export default function Home() {
                   Optimized Continuous Integration/Continuous Deployment
                   pipeline (GitHub Actions), reducing total duration by 17% to
                   reduce costs and accelerate developer feedback. <br />
-                  Enhanced user experience and analytics capabilities by
-                  developing frontend solutions for personalized content
-                  delivery and implementing robust GA4 custom event tracking.
-                  This enabled deeper insights into user interactions and the
-                  performance of key e-commerce features.
                 </p>
               </div>
 
@@ -107,10 +102,6 @@ export default function Home() {
                   Partnered with the engineering team to design and implement
                   customized digital solutions, seamlessly integrating CMS and
                   e-commerce functionalities. <br />
-                  Successfully managed multiple concurrent projects,
-                  demonstrating adaptability to evolving client requirements
-                  while consistently upholding high-quality standards and
-                  meeting deadlines.
                 </p>
               </div>
 
@@ -126,12 +117,6 @@ export default function Home() {
                   <br />
                   Collaborated in addressing customer-centric NPS challenges,
                   directly enhancing user satisfaction and engagement metrics.
-                  <br />
-                  Authored comprehensive technical documentation and enforced
-                  coding best practices, leading to a significant reduction in
-                  codebase complexity and reducing bugs. <br />
-                  Integrated Segment and FullStory analytics to capture user
-                  interactions, enabling data-driven UX improvements.
                 </p>
               </div>
 
@@ -144,13 +129,6 @@ export default function Home() {
                   Developed and delivered a complete mobile application solution
                   using React Native for deployment on iPads at CVS Pharmacy,
                   improving customer experience and operational efficiency.
-                  <br />
-                  Collaborated within an Agile Scrum team environment to define
-                  user stories, prioritize development tasks, and maintain clear
-                  communication throughout the project lifecycle. <br />
-                  Actively engaged in debugging, conducting code reviews, and
-                  implementing performance optimizations to ensure the
-                  application met stringent quality standards.
                 </p>
               </div>
             </div>
