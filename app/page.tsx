@@ -254,7 +254,7 @@ export default function Home() {
           </div>
 
           <footer className="pt-8 pb-4 flex items-center justify-between text-sm text-[rgb(var(--foreground-rgb))]">
-            <p>© 2025 AILIN NAKAGANEKU</p>
+            <p>© 2025 NAKAGANEKU</p>
             <div className="flex gap-6">
               <Link
                 href="https://github.com/ailinnakaganeku"
