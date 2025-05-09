@@ -45,12 +45,12 @@ export default function Home() {
             </h2>
             <div className="jp-line" role="presentation"></div>
             <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
-              A Frontend Software Developer dedicated to driving
-              transformative impact by building bridges between innovative
-              technology and tangible business growth. My mission is to
-              architect high-performance, accessible, and intuitive digital
-              experiences that not only empower users but also unlock measurable
-              ROI and strategic advantage. By translating complex user data into
+              A Frontend Software Developer dedicated to driving transformative
+              impact by building bridges between innovative technology and
+              tangible business growth. My mission is to architect
+              high-performance, accessible, and intuitive digital experiences
+              that not only empower users but also unlock measurable ROI and
+              strategic advantage. By translating complex user data into
               actionable product innovations and fostering efficient development
               cycles, I create lasting value and help businesses connect with
               their customers to thrive in a dynamic digital world, firmly
@@ -213,8 +213,23 @@ export default function Home() {
               CONTACT
             </h2>
             <div className="jp-line"></div>
-            <div className="space-y-2">
-              <p className="hover-fade link-underline">ailinndev@proton.me</p>
+            <div className="space-y-4">
+              <div className="flex items-center gap-2 hover-fade">
+                <a
+                  href="mailto:ailinndev@proton.me"
+                  className="hover:text-[rgb(var(--accent-color))] transition-colors"
+                >
+                  ailinndev@proton.me
+                </a>
+              </div>
+              <div className="flex items-center gap-2 hover-fade">
+                <a
+                  href="tel:+34620466880"
+                  className="hover:text-[rgb(var(--accent-color))] transition-colors"
+                >
+                  620 466 880
+                </a>
+              </div>
             </div>
           </section>
 
