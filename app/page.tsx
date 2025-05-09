@@ -1,0 +1,230 @@
+"use client";
+
+import { Download } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { useEffect, useRef } from "react";
+
+export default function Home() {
+  const mainRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+      observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <main
+      ref={mainRef}
+      id="main-content"
+      className="min-h-screen flex flex-col lg:flex-row"
+      role="main"
+    >
+      <section
+        className="order-2 lg:order-none w-full lg:w-1/2 bg-[rgb(var(--background-rgb))] p-8 lg:p-16"
+        aria-label="Portfolio Details"
+      >
+        <div className="max-w-2xl mx-auto space-y-16">
+          <section id="about" className="animate-on-scroll">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
+              ABOUT
+            </h2>
+            <div className="jp-line" role="presentation"></div>
+            <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
+              A Semi Senior Frontend Software Developer with 4 years of
+              experience, dedicated to driving transformative impact by building
+              bridges between innovative technology and tangible business
+              growth. My mission is to architect high-performance, accessible,
+              and intuitive digital experiences that empower users and unlock
+              measurable ROI.
+            </p>
+          </section>
+
+          <section id="experience" className="animate-on-scroll">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
+              EXPERIENCE
+            </h2>
+            <div className="jp-line"></div>
+            <div className="space-y-8">
+              <div className="hover-fade">
+                <h3 className="font-medium">Crombie</h3>
+                <p className="text-[rgb(var(--accent-color))] mb-2">
+                  Frontend Software Engineer | Sep 2024 – Present
+                </p>
+                <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
+                  Led performance optimization initiatives, implemented
+                  end-to-end testing with Cypress Cloud, and enhanced web
+                  accessibility according to WCAG guidelines. Optimized CI/CD
+                  pipelines and developed frontend solutions for personalized
+                  content delivery.
+                </p>
+              </div>
+
+              <div className="hover-fade">
+                <h3 className="font-medium">Zenvia</h3>
+                <p className="text-[rgb(var(--accent-color))] mb-2">
+                  Frontend Engineer | Oct 2021 – Jul 2023
+                </p>
+                <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
+                  Contributed to company-wide redesign initiatives, improved NPS
+                  metrics, and integrated analytics solutions. Authored
+                  technical documentation and enforced coding best practices.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="projects" className="animate-on-scroll">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
+              TECHNICAL SKILLS
+            </h2>
+            <div className="jp-line"></div>
+            <div className="space-y-4">
+              <div className="hover-fade">
+                <h3 className="font-medium">Frontend Development</h3>
+                <p className="text-[rgb(var(--foreground-rgb))] text-sm leading-relaxed">
+                  HTML5, CSS3, JavaScript, TypeScript, React, React Native,
+                  Next.js
+                </p>
+              </div>
+              <div className="hover-fade">
+                <h3 className="font-medium">Backend & Testing</h3>
+                <p className="text-[rgb(var(--foreground-rgb))] text-sm leading-relaxed">
+                  Node.js, GraphQL, Cypress, WordPress
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="education" className="animate-on-scroll">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
+              EDUCATION
+            </h2>
+            <div className="jp-line"></div>
+            <div className="space-y-4">
+              <div className="hover-fade">
+                <h3 className="font-medium">Full Stack Javascript Developer</h3>
+                <p className="text-[rgb(var(--accent-color))]">
+                  Henry Bootcamp | Jan 2021
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="awards" className="animate-on-scroll">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
+              CERTIFICATIONS
+            </h2>
+            <div className="jp-line"></div>
+            <ul className="space-y-2">
+              <li className="hover-fade">
+                Google Cloud Digital Leader (In Progress)
+              </li>
+              <li className="hover-fade">
+                EF Set: Official English Certificate C2 Proficient
+              </li>
+              <li className="hover-fade">Meta: Principles of UX/UI Design</li>
+            </ul>
+          </section>
+
+          <section id="contact" className="animate-on-scroll">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
+              CONTACT
+            </h2>
+            <div className="jp-line"></div>
+            <div className="space-y-2">
+              <p className="hover-fade link-underline">ailinndev@proton.me</p>
+            </div>
+          </section>
+
+          <section className="animate-on-scroll">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
+              LOCATION
+            </h2>
+            <div className="jp-line"></div>
+            <p>Madrid, Spain</p>
+          </section>
+
+          <div className="flex justify-start">
+            <a
+              href="/ailin-nakaganeku-resume.pdf"
+              download="ailin-nakaganeku-resume.pdf"
+              className="btn-primary flex items-center justify-center gap-2 no-underline"
+              aria-label="Download Ailin PDF Resume"
+            >
+              <Download size={20} aria-hidden="true" />
+              <span>Download PDF Resume</span>
+            </a>
+          </div>
+
+          <footer className="pt-8 pb-4 flex items-center justify-between text-sm text-[rgb(var(--foreground-rgb))]">
+            <p>© 2025 AILIN NAKAGANEKU</p>
+            <div className="flex gap-6">
+              <Link
+                href="https://github.com/ailinnakaganeku"
+                className="social-link"
+                aria-label="Visit GitHub profile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/ailinn"
+                className="social-link"
+                aria-label="Visit LinkedIn profile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </Link>
+            </div>
+          </footer>
+        </div>
+      </section>
+
+      <section
+        className="order-1 lg:order-none w-full lg:w-1/2 bg-[rgb(var(--foreground-rgb))] p-8 lg:p-16 flex items-center justify-center text-[rgb(var(--background-rgb))] min-h-[60vh] lg:min-h-screen lg:fixed lg:right-0"
+        aria-label="Profile Introduction"
+      >
+        <div className="max-w-xl text-center">
+          <h1 className="text-4xl lg:text-6xl font-medium mb-6 tracking-wider font-merriweather-sans">
+            Nakaganeku
+          </h1>
+          <div className="relative w-full max-w-md mx-auto mb-6 aspect-[3/4] lg:h-[60vh]">
+            <Image
+              src="/profile.webp"
+              alt="Ailin Nakaganeku - Frontend Software Developer"
+              fill
+              className="object-cover will-change-transform"
+              sizes="(max-width: 640px) 90vw, (max-width: 768px) 80vw, (max-width: 1024px) 40vw, 500px"
+              quality={95}
+              priority
+              loading="eager"
+              style={{ borderRadius: "2px" }}
+            />
+          </div>
+          <p className="text-xl lg:text-2xl tracking-wide font-merriweather-sans">
+            Frontend Software
+            <br />
+            Developer
+          </p>
+        </div>
+      </section>
+    </main>
+  );
+}
