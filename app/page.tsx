@@ -45,12 +45,17 @@ export default function Home() {
             </h2>
             <div className="jp-line" role="presentation"></div>
             <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
-              A Semi Senior Frontend Software Developer with 4 years of
-              experience, dedicated to driving transformative impact by building
-              bridges between innovative technology and tangible business
-              growth. My mission is to architect high-performance, accessible,
-              and intuitive digital experiences that empower users and unlock
-              measurable ROI.
+              A Semi Senior Frontend Software Developer dedicated to driving
+              transformative impact by building bridges between innovative
+              technology and tangible business growth. My mission is to
+              architect high-performance, accessible, and intuitive digital
+              experiences that not only empower users but also unlock measurable
+              ROI and strategic advantage. By translating complex user data into
+              actionable product innovations and fostering efficient development
+              cycles, I create lasting value and help businesses connect with
+              their customers to thrive in a dynamic digital world, firmly
+              believing in technology&#39;s power to create opportunity and
+              positive impact.
             </p>
           </section>
 
@@ -66,11 +71,46 @@ export default function Home() {
                   Frontend Software Engineer | Sep 2024 – Present
                 </p>
                 <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
-                  Led performance optimization initiatives, implemented
-                  end-to-end testing with Cypress Cloud, and enhanced web
-                  accessibility according to WCAG guidelines. Optimized CI/CD
-                  pipelines and developed frontend solutions for personalized
-                  content delivery.
+                  Investigated, debugged, and optimized code to enhance
+                  application performance and ensure application stability and
+                  performance. <br />
+                  Resolved end-to-end testing challenges using Cypress Cloud,
+                  reducing test flakiness by 8% and increasing deployment
+                  confidence. <br />
+                  Collaborated on migrating and upgrading applications to React
+                  18, successfully resolving hydration issues and improving
+                  performance metrics. Advanced web accessibility by
+                  implementing Cypress Accessibility Testing, proactively
+                  identifying and resolving compliance gaps to improve user
+                  experience according to WCAG guidelines. <br />
+                  Optimized Continuous Integration/Continuous Deployment
+                  pipeline (GitHub Actions), reducing total duration by 17% to
+                  reduce costs and accelerate developer feedback. <br />
+                  Enhanced user experience and analytics capabilities by
+                  developing frontend solutions for personalized content
+                  delivery and implementing robust GA4 custom event tracking.
+                  This enabled deeper insights into user interactions and the
+                  performance of key e-commerce features.
+                </p>
+              </div>
+
+              <div className="hover-fade">
+                <h3 className="font-medium">Crombie</h3>
+                <p className="text-[rgb(var(--accent-color))] mb-2">
+                  Digital Experience Frontend Developer | Jul 2023 – Sep 2024
+                </p>
+                <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
+                  Developed and launched highly responsive, performance-driven
+                  web applications using React.js and Next.js, delivering
+                  exceptional cross-platform user experiences (desktop &
+                  mobile). <br />
+                  Partnered with the engineering team to design and implement
+                  customized digital solutions, seamlessly integrating CMS and
+                  e-commerce functionalities. <br />
+                  Successfully managed multiple concurrent projects,
+                  demonstrating adaptability to evolving client requirements
+                  while consistently upholding high-quality standards and
+                  meeting deadlines.
                 </p>
               </div>
 
@@ -80,9 +120,37 @@ export default function Home() {
                   Frontend Engineer | Oct 2021 – Jul 2023
                 </p>
                 <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
-                  Contributed to company-wide redesign initiatives, improved NPS
-                  metrics, and integrated analytics solutions. Authored
-                  technical documentation and enforced coding best practices.
+                  Contributed to a company-wide redesign and rebranding
+                  initiative, utilizing internal design system libraries to
+                  significantly improve UI consistency and brand alignment.
+                  <br />
+                  Collaborated in addressing customer-centric NPS challenges,
+                  directly enhancing user satisfaction and engagement metrics.
+                  <br />
+                  Authored comprehensive technical documentation and enforced
+                  coding best practices, leading to a significant reduction in
+                  codebase complexity and reducing bugs. <br />
+                  Integrated Segment and FullStory analytics to capture user
+                  interactions, enabling data-driven UX improvements.
+                </p>
+              </div>
+
+              <div className="hover-fade">
+                <h3 className="font-medium">Tag Latam - TA Group Holdings</h3>
+                <p className="text-[rgb(var(--accent-color))] mb-2">
+                  React Developer | Apr 2021 – Sept 2021
+                </p>
+                <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
+                  Developed and delivered a complete mobile application solution
+                  using React Native for deployment on iPads at CVS Pharmacy,
+                  improving customer experience and operational efficiency.
+                  <br />
+                  Collaborated within an Agile Scrum team environment to define
+                  user stories, prioritize development tasks, and maintain clear
+                  communication throughout the project lifecycle. <br />
+                  Actively engaged in debugging, conducting code reviews, and
+                  implementing performance optimizations to ensure the
+                  application met stringent quality standards.
                 </p>
               </div>
             </div>
@@ -102,9 +170,21 @@ export default function Home() {
                 </p>
               </div>
               <div className="hover-fade">
-                <h3 className="font-medium">Backend & Testing</h3>
+                <h3 className="font-medium">Backend Development</h3>
                 <p className="text-[rgb(var(--foreground-rgb))] text-sm leading-relaxed">
-                  Node.js, GraphQL, Cypress, WordPress
+                  Node.js, GraphQL
+                </p>
+              </div>
+              <div className="hover-fade">
+                <h3 className="font-medium">CMS</h3>
+                <p className="text-[rgb(var(--foreground-rgb))] text-sm leading-relaxed">
+                  WordPress
+                </p>
+              </div>
+              <div className="hover-fade">
+                <h3 className="font-medium">Testing</h3>
+                <p className="text-[rgb(var(--foreground-rgb))] text-sm leading-relaxed">
+                  Cypress, Jest, React Testing Library
                 </p>
               </div>
             </div>
@@ -133,6 +213,15 @@ export default function Home() {
             <ul className="space-y-2">
               <li className="hover-fade">
                 Google Cloud Digital Leader (In Progress)
+              </li>
+              <li className="hover-fade">
+                Kaggle: 5-Day Gen AI Intensive Course
+              </li>
+              <li className="hover-fade">
+                IBM: Generative AI: Prompt Engineering
+              </li>
+              <li className="hover-fade">
+                Mastercard: Dynamic Yield Technical Certification
               </li>
               <li className="hover-fade">
                 EF Set: Official English Certificate C2 Proficient

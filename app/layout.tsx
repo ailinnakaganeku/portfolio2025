@@ -1,9 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import {
-  Merriweather,
-  Noto_Sans_JP,
-} from "next/font/google";
+import { Merriweather, Noto_Sans_JP } from "next/font/google";
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
@@ -19,15 +16,15 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "Ailin - Senior Art Director & Graphic Designer",
+  title: "Ailin Nakaganeku - Frontend Software Developer | React, TypeScript",
   description:
-    "Portfolio of Ailin, an accomplished Art Director and Graphic Designer specializing in brand identity, digital design, and creative direction.",
+    "Portfolio of Ailin Nakaganeku, a Semi Senior Frontend Software Developer specializing in building high-performance, accessible, and intuitive web applications with React, TypeScript, and modern frontend technologies.",
   keywords:
-    "Art Director, Graphic Designer, Brand Identity, Digital Design, Creative Direction, Portfolio",
+    "Frontend Developer, Software Developer, React Developer, TypeScript, JavaScript, Next.js, Web Development, Portfolio, Ailin Nakaganeku, UI/UX, Web Accessibility, Cypress",
   openGraph: {
-    title: "Ailin - Senior Art Director & Graphic Designer",
+    title: "Ailin Nakaganeku - Frontend Software Developer | React, TypeScript",
     description:
-      "Portfolio of Ailin, an accomplished Art Director and Graphic Designer specializing in brand identity, digital design, and creative direction.",
+      "Explore the work of Ailin Nakaganeku, focusing on creating impactful digital experiences with React, TypeScript, and modern web technologies.",
     type: "website",
     locale: "en_US",
   },
