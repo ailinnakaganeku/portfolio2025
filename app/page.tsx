@@ -121,7 +121,7 @@ export default function Home() {
                   in the health-tech space reinforced my commitment to quality,
                   user-centric design, and developing with an understanding of
                   the data sensitivity inherent in healthcare applications
-                  within an Agile Scrum framework.
+                  within an Agile Scrum methodology.
                 </p>
               </div>
             </div>
