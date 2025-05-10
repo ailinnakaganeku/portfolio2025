@@ -285,7 +285,7 @@ export default function Home() {
               src="/profile.webp"
               alt="Ailin Nakaganeku - Frontend Software Developer"
               fill
-              className="object-cover will-change-transform"
+              className="object-cover"
               sizes="(max-width: 640px) 90vw, (max-width: 768px) 80vw, (max-width: 1024px) 40vw, 500px"
               quality={75}
               priority
