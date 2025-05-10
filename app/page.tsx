@@ -287,11 +287,11 @@ export default function Home() {
               fill
               className="object-cover will-change-transform"
               sizes="(max-width: 640px) 90vw, (max-width: 768px) 80vw, (max-width: 1024px) 40vw, 500px"
-              quality={80}
+              quality={75}
               priority
               style={{ borderRadius: "2px" }}
               placeholder="blur"
-              blurDataURL="/profile.webp"
+              blurDataURL="/placeholder.webp"
             />
           </div>
           <p className="text-xl lg:text-2xl tracking-wide font-merriweather-sans">
