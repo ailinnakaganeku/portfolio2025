@@ -45,17 +45,13 @@ export default function Home() {
             </h2>
             <div className="jp-line" role="presentation"></div>
             <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
-              A Frontend Software Developer dedicated to driving transformative
-              impact by building bridges between innovative technology and
-              tangible business growth. My mission is to architect
-              high-performance, accessible, and intuitive digital experiences
-              that not only empower users but also unlock measurable ROI and
-              strategic advantage. By translating complex user data into
-              actionable product innovations and fostering efficient development
-              cycles, I create lasting value and help businesses connect with
-              their customers to thrive in a dynamic digital world, firmly
-              believing in technology&#39;s power to create opportunity and
-              positive impact.
+              A Frontend Software Developer dedicated to crafting impactful,
+              high-performance, accessible, and intuitive web experiences. I
+              transform complex challenges into efficient, user-centric
+              solutions built for lasting value. With an open, collaborative
+              approach, I&#39;m driven to apply technology towards meaningful
+              advancements that can enhance well-being and support critical
+              innovations.
             </p>
           </section>
 
@@ -71,21 +67,15 @@ export default function Home() {
                   Frontend Software Engineer | Sep 2024 – Present
                 </p>
                 <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
-                  Investigated, debugged, and optimized code to enhance
-                  application performance and ensure application stability and
-                  performance. <br />
-                  Resolved end-to-end testing challenges using Cypress Cloud,
-                  reducing test flakiness by 8% and increasing deployment
-                  confidence. <br />
-                  Collaborated on migrating and upgrading applications to React
-                  18, successfully resolving hydration issues and improving
-                  performance metrics. Advanced web accessibility by
-                  implementing Cypress Accessibility Testing, proactively
-                  identifying and resolving compliance gaps to improve user
-                  experience according to WCAG guidelines. <br />
-                  Optimized Continuous Integration/Continuous Deployment
-                  pipeline (GitHub Actions), reducing total duration by 17% to
-                  reduce costs and accelerate developer feedback. <br />
+                  Driving frontend excellence on the global PUMA.com platform
+                  (React, Next.js, TypeScript). Key impacts include enhancing
+                  application performance via React 18 upgrades, championing
+                  WCAG accessibility with Cypress testing, and boosting DevOps
+                  efficiency by optimizing CI/CD pipelines (17% faster builds)
+                  and E2E test stability (8% less flakiness) in a GCP/Terraform
+                  environment. This work reflects my dedication to
+                  high-performance, inclusive user experiences and robust,
+                  sustainable development practices.
                 </p>
               </div>
 
@@ -95,13 +85,12 @@ export default function Home() {
                   Digital Experience Frontend Developer | Jul 2023 – Sep 2024
                 </p>
                 <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
-                  Developed and launched highly responsive, performance-driven
-                  web applications using React.js and Next.js, delivering
-                  exceptional cross-platform user experiences (desktop &
-                  mobile). <br />
-                  Partnered with the engineering team to design and implement
-                  customized digital solutions, seamlessly integrating CMS and
-                  e-commerce functionalities. <br />
+                  Developed responsive, performance-driven React.js and Next.js
+                  web applications, delivering exceptional cross-platform user
+                  experiences with seamless CMS/e-commerce integrations.
+                  Successfully managed multiple concurrent projects, ensuring
+                  high-quality standards and adaptability while creating lasting
+                  value for users and the business.
                 </p>
               </div>
 
@@ -111,12 +100,12 @@ export default function Home() {
                   Frontend Engineer | Oct 2021 – Jul 2023
                 </p>
                 <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
-                  Contributed to a company-wide redesign and rebranding
-                  initiative, utilizing internal design system libraries to
-                  significantly improve UI consistency and brand alignment.
-                  <br />
-                  Collaborated in addressing customer-centric NPS challenges,
-                  directly enhancing user satisfaction and engagement metrics.
+                  Contributed to a major redesign by implementing a design
+                  system for enhanced UI consistency, and improved codebase
+                  quality through comprehensive documentation and best
+                  practices. Leveraged analytics (Segment, FullStory) to drive
+                  data-informed UX improvements, directly enhancing user
+                  satisfaction.
                 </p>
               </div>
 
@@ -126,9 +115,13 @@ export default function Home() {
                   React Developer | Apr 2021 – Sept 2021
                 </p>
                 <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
-                  Developed and delivered a complete mobile application solution
-                  using React Native for deployment on iPads at CVS Pharmacy,
-                  improving customer experience and operational efficiency.
+                  Delivered a React Native iPad solution for CVS Pharmacy, a
+                  major US healthcare provider, enhancing in-store customer
+                  experience and operational efficiency. This foundational role
+                  in the health-tech space reinforced my commitment to quality,
+                  user-centric design, and developing with an understanding of
+                  the data sensitivity inherent in healthcare applications
+                  within an Agile Scrum framework.
                 </p>
               </div>
             </div>
