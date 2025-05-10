@@ -3,25 +3,33 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 27, 49, 33;  /* Matcha green */
-  --background-rgb: 242, 239, 234;  /* Washi paper white */
-  --accent-color: 156, 121, 84;   /* Kincha brown */
-  --sakura-pink: 255, 218, 224;  /* Sakura pink */
-  --bamboo-green: 42, 83, 44;  /* Bamboo green */
+  --foreground-rgb: 27, 49, 33; /* Matcha green */
+  --background-rgb: 242, 239, 234; /* Washi paper white */
+  --accent-color: 112, 87, 61; /* Kincha brown */
+  --sakura-pink: 255, 218, 224; /* Sakura pink */
+  --bamboo-green: 42, 83, 44; /* Bamboo green */
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
   letter-spacing: 0.02em;
-  background-image: 
-    radial-gradient(circle at 100% 100%, rgba(var(--sakura-pink), 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 0% 0%, rgba(var(--bamboo-green), 0.05) 0%, transparent 50%);
+  background-image: radial-gradient(
+      circle at 100% 100%,
+      rgba(var(--sakura-pink), 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 0% 0%,
+      rgba(var(--bamboo-green), 0.05) 0%,
+      transparent 50%
+    );
 }
 
 .jp-line {
   height: 1px;
-  background: linear-gradient(to right, 
+  background: linear-gradient(
+    to right,
     transparent,
     rgb(var(--foreground-rgb)) 50%,
     transparent
@@ -32,7 +40,7 @@ body {
 }
 
 .jp-line::before {
-  content: '❀';
+  content: "❀";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -83,7 +91,7 @@ body {
 }
 
 .social-link::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -121,7 +129,7 @@ body {
 }
 
 .btn-primary::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -145,7 +153,7 @@ body {
 }
 
 .image-container::after {
-  content: '';
+  content: "";
   @apply absolute inset-0 bg-gradient-to-b from-transparent to-black/10 opacity-0 transition-opacity duration-300;
 }
 
@@ -156,7 +164,9 @@ body {
 .group:hover .group-hover\:scale-105 {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .image-hover {
@@ -231,7 +241,12 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   letter-spacing: 0.05em;
   font-feature-settings: "palt";
 }
@@ -239,10 +254,6 @@ h1, h2, h3, h4, h5, h6 {
 .section-title {
   writing-mode: vertical-rl;
   text-orientation: mixed;
-}
-
-.font-space-grotesk {
-  font-family: var(--font-space-grotesk);
 }
 
 .font-merriweather-sans {
