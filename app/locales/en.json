@@ -1,0 +1,96 @@
+{
+  "home": {
+    "about": {
+      "title": "ABOUT",
+      "description": "A Frontend Software Developer dedicated to crafting impactful, high-performance, accessible, and intuitive web experiences. I transform complex challenges into efficient, user-centric solutions built for lasting value. With an open, collaborative approach, I'm driven to apply technology towards meaningful advancements that can enhance well-being and support critical innovations."
+    },
+    "experience": {
+      "title": "EXPERIENCE",
+      "crombie1": {
+        "company": "Crombie",
+        "role": "Frontend Software Engineer | Sep 2024 – Present",
+        "description": "Driving frontend excellence on the global PUMA.com platform (React, Next.js, TypeScript). Key impacts include enhancing application performance via React 18 upgrades, championing WCAG accessibility with Cypress testing, and boosting DevOps efficiency by optimizing CI/CD pipelines (17% faster builds) and E2E test stability (8% less flakiness) in a GCP/Terraform environment. This work reflects my dedication to high-performance, inclusive user experiences and robust, sustainable development practices."
+      },
+      "crombie2": {
+        "company": "Crombie",
+        "role": "Digital Experience Frontend Developer | Jul 2023 – Sep 2024",
+        "description": "Developed responsive, performance-driven React.js and Next.js web applications, delivering exceptional cross-platform user experiences with seamless CMS/e-commerce integrations. Successfully managed multiple concurrent projects, ensuring high-quality standards and adaptability while creating lasting value for users and the business."
+      },
+      "zenvia": {
+        "company": "Zenvia",
+        "role": "Frontend Engineer | Oct 2021 – Jul 2023",
+        "description": "Contributed to a major redesign by implementing a design system for enhanced UI consistency, and improved codebase quality through comprehensive documentation and best practices. Leveraged analytics (Segment, FullStory) to drive data-informed UX improvements, directly enhancing user satisfaction."
+      },
+      "tagLatam": {
+        "company": "Tag Latam - TA Group Holdings",
+        "role": "React Developer | Apr 2021 – Sept 2021",
+        "description": "Delivered a React Native iPad solution for CVS Pharmacy, a major US healthcare provider, enhancing in-store customer experience and operational efficiency. This foundational role in the health-tech space reinforced my commitment to quality, user-centric design, and developing with an understanding of the data sensitivity inherent in healthcare applications within an Agile Scrum methodology."
+      }
+    },
+    "technicalSkills": {
+      "title": "TECHNICAL SKILLS",
+      "frontend": {
+        "title": "Frontend Development",
+        "skills": "HTML5, CSS3, JavaScript, TypeScript, React, React Native, Next.js"
+      },
+      "backend": {
+        "title": "Backend Development",
+        "skills": "Node.js, GraphQL"
+      },
+      "cms": {
+        "title": "CMS",
+        "skills": "WordPress"
+      },
+      "testing": {
+        "title": "Testing",
+        "skills": "Cypress, Jest, React Testing Library"
+      }
+    },
+    "education": {
+      "title": "EDUCATION",
+      "bootcamp": {
+        "degree": "Full Stack Javascript Developer",
+        "institution": "Henry Bootcamp | Jan 2021"
+      }
+    },
+    "certifications": {
+      "title": "CERTIFICATIONS",
+      "items": [
+        "Google Cloud Digital Leader (In Progress)",
+        "Kaggle: 5-Day Gen AI Intensive Course",
+        "IBM: Generative AI: Prompt Engineering",
+        "Mastercard: Dynamic Yield Technical Certification",
+        "EF Set: Official English Certificate C2 Proficient",
+        "Meta: Principles of UX/UI Design"
+      ]
+    },
+    "contact": {
+      "title": "CONTACT",
+      "email": "ailinndev@proton.me",
+      "phone": "620 466 880"
+    },
+    "location": {
+      "title": "LOCATION",
+      "city": "Madrid, Spain"
+    },
+    "resumeButton": "Download PDF Resume",
+    "resumeAriaLabel": "Download Ailin PDF Resume",
+    "footer": {
+      "copyright": "© 2025 NAKAGANEKU",
+      "github": "GitHub",
+      "githubAriaLabel": "Visit GitHub profile",
+      "linkedin": "LinkedIn",
+      "linkedinAriaLabel": "Visit LinkedIn profile"
+    },
+    "profileSection": {
+      "ariaLabel": "Profile Introduction",
+      "name": "Nakaganeku",
+      "imageAlt": "Ailin Nakaganeku - Frontend Software Developer",
+      "titleLine1": "Frontend Software",
+      "titleLine2": "Developer"
+    }
+  },
+  "ariaLabels": {
+    "portfolioDetails": "Portfolio Details"
+  }
+}

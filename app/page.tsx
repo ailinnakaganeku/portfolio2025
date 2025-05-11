@@ -1,9 +1,10 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { Download } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import messages from "./locales/en.json";
 
 export default function Home() {
   const mainRef = useRef<HTMLElement>(null);
@@ -27,6 +28,9 @@ export default function Home() {
     return () => observer.disconnect();
   }, []);
 
+  const t = messages.home;
+  const tAria = messages.ariaLabels;
+
   return (
     <main
       ref={mainRef}
@@ -36,92 +40,62 @@ export default function Home() {
     >
       <section
         className="order-2 lg:order-none w-full lg:w-1/2 bg-[rgb(var(--background-rgb))] p-8 lg:p-16"
-        aria-label="Portfolio Details"
+        aria-label={tAria.portfolioDetails}
       >
         <div className="max-w-2xl mx-auto space-y-16">
           <section id="about" className="animate-on-scroll">
             <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
-              ABOUT
+              {t.about.title}
             </h2>
             <div className="jp-line" role="presentation"></div>
             <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
-              A Frontend Software Developer dedicated to crafting impactful,
-              high-performance, accessible, and intuitive web experiences. I
-              transform complex challenges into efficient, user-centric
-              solutions built for lasting value. With an open, collaborative
-              approach, I&#39;m driven to apply technology towards meaningful
-              advancements that can enhance well-being and support critical
-              innovations.
+              {t.about.description}
             </p>
           </section>
 
           <section id="experience" className="animate-on-scroll">
             <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
-              EXPERIENCE
+              {t.experience.title}
             </h2>
             <div className="jp-line"></div>
             <div className="space-y-8">
               <div className="hover-fade">
-                <h3 className="font-medium">Crombie</h3>
+                <h3 className="font-medium">{t.experience.crombie1.company}</h3>
                 <p className="text-[rgb(var(--accent-color))] mb-2">
-                  Frontend Software Engineer | Sep 2024 – Present
+                  {t.experience.crombie1.role}
                 </p>
                 <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
-                  Driving frontend excellence on the global PUMA.com platform
-                  (React, Next.js, TypeScript). Key impacts include enhancing
-                  application performance via React 18 upgrades, championing
-                  WCAG accessibility with Cypress testing, and boosting DevOps
-                  efficiency by optimizing CI/CD pipelines (17% faster builds)
-                  and E2E test stability (8% less flakiness) in a GCP/Terraform
-                  environment. This work reflects my dedication to
-                  high-performance, inclusive user experiences and robust,
-                  sustainable development practices.
+                  {t.experience.crombie1.description}
                 </p>
               </div>
 
               <div className="hover-fade">
-                <h3 className="font-medium">Crombie</h3>
+                <h3 className="font-medium">{t.experience.crombie2.company}</h3>
                 <p className="text-[rgb(var(--accent-color))] mb-2">
-                  Digital Experience Frontend Developer | Jul 2023 – Sep 2024
+                  {t.experience.crombie2.role}
                 </p>
                 <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
-                  Developed responsive, performance-driven React.js and Next.js
-                  web applications, delivering exceptional cross-platform user
-                  experiences with seamless CMS/e-commerce integrations.
-                  Successfully managed multiple concurrent projects, ensuring
-                  high-quality standards and adaptability while creating lasting
-                  value for users and the business.
+                  {t.experience.crombie2.description}
                 </p>
               </div>
 
               <div className="hover-fade">
-                <h3 className="font-medium">Zenvia</h3>
+                <h3 className="font-medium">{t.experience.zenvia.company}</h3>
                 <p className="text-[rgb(var(--accent-color))] mb-2">
-                  Frontend Engineer | Oct 2021 – Jul 2023
+                  {t.experience.zenvia.role}
                 </p>
                 <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
-                  Contributed to a major redesign by implementing a design
-                  system for enhanced UI consistency, and improved codebase
-                  quality through comprehensive documentation and best
-                  practices. Leveraged analytics (Segment, FullStory) to drive
-                  data-informed UX improvements, directly enhancing user
-                  satisfaction.
+                  {t.experience.zenvia.description}
                 </p>
               </div>
 
               <div className="hover-fade">
-                <h3 className="font-medium">Tag Latam - TA Group Holdings</h3>
+                <h3 className="font-medium">{t.experience.tagLatam.company}</h3>
                 <p className="text-[rgb(var(--accent-color))] mb-2">
-                  React Developer | Apr 2021 – Sept 2021
+                  {t.experience.tagLatam.role}
                 </p>
                 <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
-                  Delivered a React Native iPad solution for CVS Pharmacy, a
-                  major US healthcare provider, enhancing in-store customer
-                  experience and operational efficiency. This foundational role
-                  in the health-tech space reinforced my commitment to quality,
-                  user-centric design, and developing with an understanding of
-                  the data sensitivity inherent in healthcare applications
-                  within an Agile Scrum methodology.
+                  {t.experience.tagLatam.description}
                 </p>
               </div>
             </div>
@@ -129,33 +103,38 @@ export default function Home() {
 
           <section id="projects" className="animate-on-scroll">
             <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
-              TECHNICAL SKILLS
+              {t.technicalSkills.title}
             </h2>
             <div className="jp-line"></div>
             <div className="space-y-4">
               <div className="hover-fade">
-                <h3 className="font-medium">Frontend Development</h3>
+                <h3 className="font-medium">
+                  {t.technicalSkills.frontend.title}
+                </h3>
                 <p className="text-[rgb(var(--foreground-rgb))] text-sm leading-relaxed">
-                  HTML5, CSS3, JavaScript, TypeScript, React, React Native,
-                  Next.js
+                  {t.technicalSkills.frontend.skills}
                 </p>
               </div>
               <div className="hover-fade">
-                <h3 className="font-medium">Backend Development</h3>
+                <h3 className="font-medium">
+                  {t.technicalSkills.backend.title}
+                </h3>
                 <p className="text-[rgb(var(--foreground-rgb))] text-sm leading-relaxed">
-                  Node.js, GraphQL
+                  {t.technicalSkills.backend.skills}
                 </p>
               </div>
               <div className="hover-fade">
-                <h3 className="font-medium">CMS</h3>
+                <h3 className="font-medium">{t.technicalSkills.cms.title}</h3>
                 <p className="text-[rgb(var(--foreground-rgb))] text-sm leading-relaxed">
-                  WordPress
+                  {t.technicalSkills.cms.skills}
                 </p>
               </div>
               <div className="hover-fade">
-                <h3 className="font-medium">Testing</h3>
+                <h3 className="font-medium">
+                  {t.technicalSkills.testing.title}
+                </h3>
                 <p className="text-[rgb(var(--foreground-rgb))] text-sm leading-relaxed">
-                  Cypress, Jest, React Testing Library
+                  {t.technicalSkills.testing.skills}
                 </p>
               </div>
             </div>
@@ -163,14 +142,14 @@ export default function Home() {
 
           <section id="education" className="animate-on-scroll">
             <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
-              EDUCATION
+              {t.education.title}
             </h2>
             <div className="jp-line"></div>
             <div className="space-y-4">
               <div className="hover-fade">
-                <h3 className="font-medium">Full Stack Javascript Developer</h3>
+                <h3 className="font-medium">{t.education.bootcamp.degree}</h3>
                 <p className="text-[rgb(var(--accent-color))]">
-                  Henry Bootcamp | Jan 2021
+                  {t.education.bootcamp.institution}
                 </p>
               </div>
             </div>
@@ -178,49 +157,38 @@ export default function Home() {
 
           <section id="awards" className="animate-on-scroll">
             <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
-              CERTIFICATIONS
+              {t.certifications.title}
             </h2>
             <div className="jp-line"></div>
             <ul className="space-y-2">
-              <li className="hover-fade">
-                Google Cloud Digital Leader (In Progress)
-              </li>
-              <li className="hover-fade">
-                Kaggle: 5-Day Gen AI Intensive Course
-              </li>
-              <li className="hover-fade">
-                IBM: Generative AI: Prompt Engineering
-              </li>
-              <li className="hover-fade">
-                Mastercard: Dynamic Yield Technical Certification
-              </li>
-              <li className="hover-fade">
-                EF Set: Official English Certificate C2 Proficient
-              </li>
-              <li className="hover-fade">Meta: Principles of UX/UI Design</li>
+              {t.certifications.items.map((item, index) => (
+                <li key={index} className="hover-fade">
+                  {item}
+                </li>
+              ))}
             </ul>
           </section>
 
           <section id="contact" className="animate-on-scroll">
             <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
-              CONTACT
+              {t.contact.title}
             </h2>
             <div className="jp-line"></div>
             <div className="space-y-4">
               <div className="flex items-center gap-2 hover-fade">
                 <a
-                  href="mailto:ailinndev@proton.me"
+                  href={`mailto:${t.contact.email}`}
                   className="hover:text-[rgb(var(--accent-color))] transition-colors"
                 >
-                  ailinndev@proton.me
+                  {t.contact.email}
                 </a>
               </div>
               <div className="flex items-center gap-2 hover-fade">
                 <a
-                  href="tel:+34620466880"
+                  href={`tel:+34${t.contact.phone.replace(/\s/g, "")}`}
                   className="hover:text-[rgb(var(--accent-color))] transition-colors"
                 >
-                  620 466 880
+                  {t.contact.phone}
                 </a>
               </div>
             </div>
@@ -228,10 +196,10 @@ export default function Home() {
 
           <section className="animate-on-scroll">
             <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
-              LOCATION
+              {t.location.title}
             </h2>
             <div className="jp-line"></div>
-            <p>Madrid, Spain</p>
+            <p>{t.location.city}</p>
           </section>
 
           <div className="flex justify-start">
@@ -239,33 +207,33 @@ export default function Home() {
               href="/ailin-nakaganeku-resume.pdf"
               download="ailin-nakaganeku-resume.pdf"
               className="btn-primary flex items-center justify-center gap-2 no-underline"
-              aria-label="Download Ailin PDF Resume"
+              aria-label={t.resumeAriaLabel}
             >
               <Download size={20} aria-hidden="true" />
-              <span>Download PDF Resume</span>
+              <span>{t.resumeButton}</span>
             </a>
           </div>
 
           <footer className="pt-8 pb-4 flex items-center justify-between text-sm text-[rgb(var(--foreground-rgb))]">
-            <p>© 2025 NAKAGANEKU</p>
+            <p>{t.footer.copyright}</p>
             <div className="flex gap-6">
               <Link
                 href="https://github.com/ailinnakaganeku"
                 className="social-link"
-                aria-label="Visit GitHub profile"
+                aria-label={t.footer.githubAriaLabel}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub
+                {t.footer.github}
               </Link>
               <Link
                 href="https://www.linkedin.com/in/ailinn"
                 className="social-link"
-                aria-label="Visit LinkedIn profile"
+                aria-label={t.footer.linkedinAriaLabel}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LinkedIn
+                {t.footer.linkedin}
               </Link>
             </div>
           </footer>
@@ -274,16 +242,16 @@ export default function Home() {
 
       <section
         className="order-1 lg:order-none w-full lg:w-1/2 bg-[rgb(var(--foreground-rgb))] p-8 lg:p-16 flex items-center justify-center text-[rgb(var(--background-rgb))] min-h-[60vh] lg:min-h-screen lg:fixed lg:right-0"
-        aria-label="Profile Introduction"
+        aria-label={t.profileSection.ariaLabel}
       >
         <div className="max-w-xl text-center">
           <h1 className="text-4xl lg:text-6xl font-medium mb-6 tracking-wider font-merriweather-sans">
-            Nakaganeku
+            {t.profileSection.name}
           </h1>
           <div className="relative w-full max-w-md mx-auto mb-6 aspect-[3/4] lg:h-[60vh]">
             <Image
               src="/profile.webp"
-              alt="Ailin Nakaganeku - Frontend Software Developer"
+              alt={t.profileSection.imageAlt}
               fill
               className="object-cover"
               sizes="(max-width: 640px) 90vw, (max-width: 768px) 80vw, (max-width: 1024px) 40vw, 500px"
@@ -295,9 +263,9 @@ export default function Home() {
             />
           </div>
           <p className="text-xl lg:text-2xl tracking-wide font-merriweather-sans">
-            Frontend Software
+            {t.profileSection.titleLine1}
             <br />
-            Developer
+            {t.profileSection.titleLine2}
           </p>
         </div>
       </section>
