@@ -39,11 +39,19 @@
       },
       "cms": {
         "title": "CMS",
-        "skills": "WordPress"
+        "skills": "WordPress, Prismic, Sanity"
       },
       "testing": {
         "title": "Testing",
         "skills": "Cypress, Jest, React Testing Library"
+      },
+      "db": {
+        "title": "Databases",
+        "skills": "MongoDB, Firebase"
+      },
+      "tools": {
+        "title": "Tools",
+        "skills": "Git, GitHub, Figma, Postman, Jira, Slack"
       }
     },
     "education": {

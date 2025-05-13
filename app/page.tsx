@@ -137,6 +137,18 @@ export default function Home() {
                   {t.technicalSkills.testing.skills}
                 </p>
               </div>
+              <div className="hover-fade">
+                <h3 className="font-medium">{t.technicalSkills.db.title}</h3>
+                <p className="text-[rgb(var(--foreground-rgb))] text-sm leading-relaxed">
+                  {t.technicalSkills.db.skills}
+                </p>
+              </div>
+              <div className="hover-fade">
+                <h3 className="font-medium">{t.technicalSkills.tools.title}</h3>
+                <p className="text-[rgb(var(--foreground-rgb))] text-sm leading-relaxed">
+                  {t.technicalSkills.tools.skills}
+                </p>
+              </div>
             </div>
           </section>
 
