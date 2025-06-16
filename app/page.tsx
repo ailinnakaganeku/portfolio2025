@@ -197,7 +197,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-2 hover-fade">
                 <a
-                  href={`tel:+34${t.contact.phone.replace(/\s/g, "")}`}
+                  href={`tel:+33${t.contact.phone.replace(/\s/g, "")}`}
                   className="hover:text-[rgb(var(--accent-color))] transition-colors"
                 >
                   {t.contact.phone}
