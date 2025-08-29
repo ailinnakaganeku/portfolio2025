@@ -257,16 +257,16 @@ export default function Home() {
         aria-label={t.profileSection.ariaLabel}
       >
         <div className="max-w-xl text-center">
-          <h1 className="text-4xl lg:text-6xl font-medium mb-6 tracking-wider font-merriweather-sans">
+          <h1 className="text-3xl lg:text-4xl font-medium mb-6 tracking-wider font-merriweather-sans">
             {t.profileSection.name}
           </h1>
-          <div className="relative w-full max-w-md mx-auto mb-6 aspect-[3/4] lg:h-[60vh]">
+          <div className="relative w-full max-w-md md:max-w-xs lg:max-w-xs mx-auto mb-6 aspect-[3/4] md:aspect-[4/5] lg:aspect-[4/5] lg:h-auto">
             <Image
               src="/profile.webp"
               alt={t.profileSection.imageAlt}
               fill
               className="object-cover"
-              sizes="(max-width: 640px) 90vw, (max-width: 768px) 80vw, (max-width: 1024px) 40vw, 500px"
+              sizes="(max-width: 640px) 90vw, (max-width: 768px) 320px, (max-width: 1024px) 320px, 320px"
               quality={75}
               priority
               style={{ borderRadius: "2px" }}
@@ -274,7 +274,7 @@ export default function Home() {
               blurDataURL="/placeholder.webp"
             />
           </div>
-          <p className="text-xl lg:text-2xl tracking-wide font-merriweather-sans">
+          <p className="text-lg lg:text-xl tracking-wide font-merriweather-sans">
             {t.profileSection.titleLine1}
             <br />
             {t.profileSection.titleLine2}
