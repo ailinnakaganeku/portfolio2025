@@ -76,7 +76,8 @@
     "contact": {
       "title": "CONTACT",
       "email": "ailinndev@proton.me",
-      "phone": "+34 684 40 93 66"
+      "phone": "+34 684 40 93 66",
+      "phoneNumber": "+34684409366"
     },
     "location": {
       "title": "LOCATION",

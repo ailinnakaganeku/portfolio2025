@@ -1,41 +1,21 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import { Download } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import messages from "./locales/en.json";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 export default function Home() {
-  const mainRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("fade-in");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    document.querySelectorAll(".animate-on-scroll").forEach((el) => {
-      observer.observe(el);
-    });
-
-    return () => observer.disconnect();
-  }, []);
+  useScrollAnimation();
 
   const t = messages.home;
   const tAria = messages.ariaLabels;
 
   return (
     <main
-      ref={mainRef}
       id="main-content"
-      className="min-h-screen flex flex-col lg:flex-row"
+      className="h-screen lg:min-h-screen flex flex-col lg:flex-row"
       role="main"
     >
       <section
@@ -47,7 +27,7 @@ export default function Home() {
             <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-widest mb-2">
               {t.about.title}
             </h2>
-            <div className="jp-line" role="presentation"></div>
+            <div className="jp-line" aria-hidden="true"></div>
             <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
               {t.about.description}
             </p>
@@ -181,8 +161,8 @@ export default function Home() {
             </h2>
             <div className="jp-line"></div>
             <ul className="space-y-2">
-              {t.certifications.items.map((item, index) => (
-                <li key={index} className="hover-fade">
+              {t.certifications.items.map((item) => (
+                <li key={item} className="hover-fade">
                   {item}
                 </li>
               ))}
@@ -199,14 +179,16 @@ export default function Home() {
                 <a
                   href={`mailto:${t.contact.email}`}
                   className="hover:text-[rgb(var(--accent-color))] transition-colors font-bold"
+                  aria-label={`Send email to ${t.contact.email}`}
                 >
                   {t.contact.email}
                 </a>
               </div>
               <div className="flex items-center gap-2 hover-fade">
                 <a
-                  href={`tel:${t.contact.phone.replace(/\s/g, "")}`}
+                  href={`tel:${t.contact.phoneNumber}`}
                   className="hover:text-[rgb(var(--accent-color))] transition-colors font-bold"
+                  aria-label={`Call ${t.contact.phone}`}
                 >
                   {t.contact.phone}
                 </a>
@@ -261,11 +243,11 @@ export default function Home() {
       </section>
 
       <section
-        className="order-1 lg:order-none w-full lg:w-1/2 bg-[rgb(var(--foreground-rgb))] p-4 sm:p-6 lg:p-16 flex items-center justify-center text-[rgb(var(--background-rgb))] min-h-[60vh] lg:min-h-screen lg:fixed lg:right-0"
+        className="order-1 lg:order-none w-full lg:w-1/2 bg-[rgb(var(--foreground-rgb))] p-4 sm:p-6 lg:p-16 flex items-center justify-center text-[rgb(var(--background-rgb))] lg:min-h-screen lg:fixed lg:right-0"
         aria-label={t.profileSection.ariaLabel}
       >
-        <div className="max-w-xl text-center">
-          <h1 className="text-4xl lg:text-6xl font-medium mb-6 tracking-wider">
+        <div className="max-w-xl text-center pt-8 lg:pt-0">
+          <h1 className="text-[45px] lg:text-6xl font-medium mb-6 tracking-wider">
             {t.profileSection.name}
           </h1>
           <div className="relative w-full max-w-[294px] mx-auto mb-6">
@@ -288,7 +270,7 @@ export default function Home() {
               blurDataURL="/placeholder.webp"
             />
           </div>
-          <p className="text-base sm:text-xl md:text-2xl lg:text-[36px] tracking-[0em] font-medium">
+          <p className="text-[24px] sm:text-xl md:text-2xl lg:text-[36px] tracking-[0em] font-medium mb-8 lg:mb-0">
             <span className="block leading-[1.2]">
               {t.profileSection.titleLine1}
             </span>
