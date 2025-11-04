@@ -1,19 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Merriweather, Noto_Sans_JP } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 
-const notoSansJP = Noto_Sans_JP({
+const dmSans = DM_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
   display: "swap",
-  variable: "--font-noto-sans-jp",
-});
-
-const merriweather = Merriweather({
-  subsets: ["latin"],
-  weight: ["300", "400", "700", "900"],
-  display: "swap",
-  variable: "--font-merriweather-sans",
+  variable: "--font-dm-sans",
 });
 
 export const metadata: Metadata = {
@@ -42,7 +35,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${notoSansJP.className} ${merriweather.variable}`}>
+      <body className={dmSans.className}>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white"

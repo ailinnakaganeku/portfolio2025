@@ -44,7 +44,7 @@ export default function Home() {
       >
         <div className="max-w-2xl mx-auto space-y-16">
           <section id="about" className="animate-on-scroll">
-            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-wider mb-2">
               {t.about.title}
             </h2>
             <div className="jp-line" role="presentation"></div>
@@ -54,7 +54,7 @@ export default function Home() {
           </section>
 
           <section id="experience" className="animate-on-scroll">
-            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-wider mb-2">
               {t.experience.title}
             </h2>
             <div className="jp-line"></div>
@@ -102,7 +102,7 @@ export default function Home() {
           </section>
 
           <section id="projects" className="animate-on-scroll">
-            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-wider mb-2">
               {t.technicalSkills.title}
             </h2>
             <div className="jp-line"></div>
@@ -153,7 +153,7 @@ export default function Home() {
           </section>
 
           <section id="education" className="animate-on-scroll">
-            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-wider mb-2">
               {t.education.title}
             </h2>
             <div className="jp-line"></div>
@@ -168,7 +168,7 @@ export default function Home() {
           </section>
 
           <section id="awards" className="animate-on-scroll">
-            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-wider mb-2">
               {t.certifications.title}
             </h2>
             <div className="jp-line"></div>
@@ -182,7 +182,7 @@ export default function Home() {
           </section>
 
           <section id="contact" className="animate-on-scroll">
-            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-wider mb-2">
               {t.contact.title}
             </h2>
             <div className="jp-line"></div>
@@ -207,7 +207,7 @@ export default function Home() {
           </section>
 
           <section className="animate-on-scroll">
-            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-medium tracking-wider mb-4">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-wider mb-2">
               {t.location.title}
             </h2>
             <div className="jp-line"></div>
@@ -253,31 +253,40 @@ export default function Home() {
       </section>
 
       <section
-        className="order-1 lg:order-none w-full lg:w-1/2 bg-[rgb(var(--foreground-rgb))] p-8 lg:p-16 flex items-center justify-center text-[rgb(var(--background-rgb))] min-h-[60vh] lg:min-h-screen lg:fixed lg:right-0"
+        className="order-1 lg:order-none w-full lg:w-1/2 bg-[rgb(var(--foreground-rgb))] p-4 sm:p-6 lg:p-16 flex items-center justify-center text-[rgb(var(--background-rgb))] min-h-[60vh] lg:min-h-screen lg:fixed lg:right-0"
         aria-label={t.profileSection.ariaLabel}
       >
         <div className="max-w-xl text-center">
-          <h1 className="text-3xl lg:text-4xl font-medium mb-6 tracking-wider font-merriweather-sans">
+          <h1 className="text-4xl lg:text-6xl font-medium mb-6 tracking-wider">
             {t.profileSection.name}
           </h1>
-          <div className="relative w-full max-w-md md:max-w-xs lg:max-w-xs mx-auto mb-6 aspect-[3/4] md:aspect-[4/5] lg:aspect-[4/5] lg:h-auto">
+          <div className="relative w-full max-w-[294px] mx-auto mb-6">
             <Image
               src="/profile.webp"
               alt={t.profileSection.imageAlt}
-              fill
-              className="object-cover"
-              sizes="(max-width: 640px) 90vw, (max-width: 768px) 320px, (max-width: 1024px) 320px, 320px"
+              width={1877}
+              height={2400}
+              className="object-cover w-full h-full"
+              sizes="(max-width: 640px) 90vw, (max-width: 768px) 80vw, (max-width: 1024px) 40vw, 294px"
               quality={75}
               priority
-              style={{ borderRadius: "2px" }}
+              style={{
+                borderRadius: "inherit",
+                objectPosition: "center center",
+                display: "block",
+                aspectRatio: "1877/2400",
+              }}
               placeholder="blur"
               blurDataURL="/placeholder.webp"
             />
           </div>
-          <p className="text-lg lg:text-xl tracking-wide font-merriweather-sans">
-            {t.profileSection.titleLine1}
-            <br />
-            {t.profileSection.titleLine2}
+          <p className="text-base sm:text-xl md:text-2xl lg:text-[36px] tracking-[0em] font-medium">
+            <span className="block leading-[1.2]">
+              {t.profileSection.titleLine1}
+            </span>
+            <span className="block leading-[1.52]">
+              {t.profileSection.titleLine2}
+            </span>
           </p>
         </div>
       </section>
