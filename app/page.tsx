@@ -218,7 +218,7 @@ export default function Home() {
 
           <footer className="pt-8 pb-4 flex items-center justify-between text-sm text-[rgb(var(--foreground-rgb))]">
             <p>{t.footer.copyright}</p>
-            <div className="flex gap-6">
+            <div className="flex gap-3 lg:gap-6">
               <Link
                 href="https://github.com/ailinnakaganeku"
                 className="social-link"
