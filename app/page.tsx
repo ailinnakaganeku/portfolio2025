@@ -39,12 +39,12 @@ export default function Home() {
       role="main"
     >
       <section
-        className="order-2 lg:order-none w-full lg:w-1/2 bg-[rgb(var(--background-rgb))] p-8 lg:p-16"
+        className="order-2 lg:order-none w-full lg:w-1/2 bg-[rgb(var(--background-rgb))] p-8 lg:p-16 lg:pt-20"
         aria-label={tAria.portfolioDetails}
       >
-        <div className="max-w-2xl mx-auto space-y-16">
+        <div className="max-w-xl mx-auto space-y-16">
           <section id="about" className="animate-on-scroll">
-            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-wider mb-2">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-widest mb-2">
               {t.about.title}
             </h2>
             <div className="jp-line" role="presentation"></div>
@@ -54,7 +54,7 @@ export default function Home() {
           </section>
 
           <section id="experience" className="animate-on-scroll">
-            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-wider mb-2">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-widest mb-2">
               {t.experience.title}
             </h2>
             <div className="jp-line"></div>
@@ -102,7 +102,7 @@ export default function Home() {
           </section>
 
           <section id="projects" className="animate-on-scroll">
-            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-wider mb-2">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-widest mb-2">
               {t.technicalSkills.title}
             </h2>
             <div className="jp-line"></div>
@@ -153,7 +153,7 @@ export default function Home() {
           </section>
 
           <section id="education" className="animate-on-scroll">
-            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-wider mb-2">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-widest mb-2">
               {t.education.title}
             </h2>
             <div className="jp-line"></div>
@@ -168,7 +168,7 @@ export default function Home() {
           </section>
 
           <section id="awards" className="animate-on-scroll">
-            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-wider mb-2">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-widest mb-2">
               {t.certifications.title}
             </h2>
             <div className="jp-line"></div>
@@ -182,7 +182,7 @@ export default function Home() {
           </section>
 
           <section id="contact" className="animate-on-scroll">
-            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-wider mb-2">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-widest mb-2">
               {t.contact.title}
             </h2>
             <div className="jp-line"></div>
@@ -190,7 +190,7 @@ export default function Home() {
               <div className="flex items-center gap-2 hover-fade">
                 <a
                   href={`mailto:${t.contact.email}`}
-                  className="hover:text-[rgb(var(--accent-color))] transition-colors"
+                  className="hover:text-[rgb(var(--accent-color))] transition-colors font-bold"
                 >
                   {t.contact.email}
                 </a>
@@ -198,7 +198,7 @@ export default function Home() {
               <div className="flex items-center gap-2 hover-fade">
                 <a
                   href={`tel:${t.contact.phone.replace(/\s/g, "")}`}
-                  className="hover:text-[rgb(var(--accent-color))] transition-colors"
+                  className="hover:text-[rgb(var(--accent-color))] transition-colors font-bold"
                 >
                   {t.contact.phone}
                 </a>
@@ -207,11 +207,11 @@ export default function Home() {
           </section>
 
           <section className="animate-on-scroll">
-            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-wider mb-2">
+            <h2 className="text-[rgb(var(--foreground-rgb))] text-lg font-bold tracking-widest mb-2">
               {t.location.title}
             </h2>
             <div className="jp-line"></div>
-            <p>{t.location.city}</p>
+            <p className="font-bold">{t.location.city}</p>
           </section>
 
           <div className="flex justify-start">

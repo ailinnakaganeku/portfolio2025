@@ -29,7 +29,7 @@ body {
 }
 
 .jp-line {
-  height: 1px;
+  height: 3px;
   background: rgb(var(--foreground-rgb));
   background: linear-gradient(
     to right,
