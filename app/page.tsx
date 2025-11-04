@@ -62,7 +62,9 @@ export default function Home() {
               <div className="hover-fade">
                 <h3 className="font-medium">{t.experience.crombie1.company}</h3>
                 <p className="text-[rgb(var(--accent-color))] mb-2">
-                  {t.experience.crombie1.role}
+                  <strong>{t.experience.crombie1.role.title}</strong>
+                  {" | "}
+                  <span>{t.experience.crombie1.role.period}</span>
                 </p>
                 <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
                   {t.experience.crombie1.description}
@@ -72,7 +74,9 @@ export default function Home() {
               <div className="hover-fade">
                 <h3 className="font-medium">{t.experience.crombie2.company}</h3>
                 <p className="text-[rgb(var(--accent-color))] mb-2">
-                  {t.experience.crombie2.role}
+                  <strong>{t.experience.crombie2.role.title}</strong>
+                  {" | "}
+                  <span>{t.experience.crombie2.role.period}</span>
                 </p>
                 <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
                   {t.experience.crombie2.description}
@@ -82,7 +86,9 @@ export default function Home() {
               <div className="hover-fade">
                 <h3 className="font-medium">{t.experience.zenvia.company}</h3>
                 <p className="text-[rgb(var(--accent-color))] mb-2">
-                  {t.experience.zenvia.role}
+                  <strong>{t.experience.zenvia.role.title}</strong>
+                  {" | "}
+                  <span>{t.experience.zenvia.role.period}</span>
                 </p>
                 <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
                   {t.experience.zenvia.description}
@@ -92,7 +98,9 @@ export default function Home() {
               <div className="hover-fade">
                 <h3 className="font-medium">{t.experience.tagLatam.company}</h3>
                 <p className="text-[rgb(var(--accent-color))] mb-2">
-                  {t.experience.tagLatam.role}
+                  <strong>{t.experience.tagLatam.role.title}</strong>
+                  {" | "}
+                  <span>{t.experience.tagLatam.role.period}</span>
                 </p>
                 <p className="text-[rgb(var(--foreground-rgb))] leading-relaxed">
                   {t.experience.tagLatam.description}

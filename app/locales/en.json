@@ -8,22 +8,22 @@
       "title": "EXPERIENCE",
       "crombie1": {
         "company": "Crombie",
-        "role": "Frontend Software Engineer | Sep 2024 – Present",
+        "role": { "title": "Frontend Engineer", "period": "Sep 2024 – Present" },
         "description": "Driving frontend excellence on the global PUMA.com platform (React, Next.js, TypeScript). Key impacts include enhancing application performance via React 18 upgrades, championing WCAG accessibility with Cypress testing, and boosting DevOps efficiency by optimizing CI/CD pipelines (17% faster builds) and E2E test stability (8% less flakiness) in a GCP/Terraform environment. This work reflects my dedication to high-performance, inclusive user experiences and robust, sustainable development practices."
       },
       "crombie2": {
         "company": "Crombie",
-        "role": "Digital Experience Frontend Developer | Jul 2023 – Sep 2024",
+        "role": { "title": "Digital Experience Frontend Developer", "period": "Jul 2023 – Sep 2024" },
         "description": "Developed responsive, performance-driven React.js and Next.js web applications, delivering exceptional cross-platform user experiences with seamless CMS/e-commerce integrations. Successfully managed multiple concurrent projects, ensuring high-quality standards and adaptability while creating lasting value for users and the business."
       },
       "zenvia": {
         "company": "Zenvia",
-        "role": "Frontend Engineer | Oct 2021 – Jul 2023",
+        "role": { "title": "Frontend Engineer", "period": "Oct 2021 – Jul 2023" },
         "description": "Contributed to a major redesign by implementing a design system for enhanced UI consistency, and improved codebase quality through comprehensive documentation and best practices. Leveraged analytics (Segment, FullStory) to drive data-informed UX improvements, directly enhancing user satisfaction."
       },
       "tagLatam": {
         "company": "Tag Latam - TA Group Holdings",
-        "role": "React Developer | Apr 2021 – Sept 2021",
+        "role": { "title": "React Developer", "period": "Apr 2021 – Sept 2021" },
         "description": "Delivered a React Native iPad solution for CVS Pharmacy, a major US healthcare provider, enhancing in-store customer experience and operational efficiency. This foundational role in the health-tech space reinforced my commitment to quality, user-centric design, and developing with an understanding of the data sensitivity inherent in healthcare applications within an Agile Scrum methodology."
       }
     },
