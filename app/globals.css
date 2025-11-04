@@ -8,10 +8,11 @@
   --accent-color: 112, 87, 61; /* Kincha brown */
   --sakura-pink: 255, 218, 224; /* Sakura pink */
   --bamboo-green: 42, 83, 44; /* Bamboo green */
+  --font-dm-sans: "DM Sans", "DM Sans Placeholder", sans-serif;
 }
 
 body {
-  font-family: var(--font-noto-sans-jp), sans-serif;
+  font-family: var(--font-dm-sans);
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
   letter-spacing: 0.02em;
@@ -29,26 +30,18 @@ body {
 
 .jp-line {
   height: 1px;
+  background: rgb(var(--foreground-rgb));
   background: linear-gradient(
     to right,
-    transparent,
-    rgb(var(--foreground-rgb)) 50%,
-    transparent
+    rgb(var(--foreground-rgb)),
+    rgb(var(--foreground-rgb)) 100%,
+    rgb(var(--foreground-rgb))
   );
-  margin: 1.5rem 0;
-  opacity: 0.3;
+  margin: 0.5rem 0 1.5rem 0;
+  opacity: 0.2;
   position: relative;
-}
-
-.jp-line::before {
-  content: "❀";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(var(--accent-color));
-  opacity: 0.5;
-  font-size: 0.8rem;
+  transform-origin: left;
+  animation: lineSwipe 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 ::-webkit-scrollbar {
@@ -179,6 +172,15 @@ body {
   }
 }
 
+@keyframes lineSwipe {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(20px);
@@ -232,6 +234,3 @@ h6 {
   text-orientation: mixed;
 }
 
-.font-merriweather-sans {
-  font-family: var(--font-merriweather-sans);
-}
