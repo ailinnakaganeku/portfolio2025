@@ -86,14 +86,14 @@
     "resumeAriaLabel": "Download Ailin PDF Resume",
     "footer": {
       "copyright": "© 2025 NAKAGANEKU",
-      "github": "GitHub",
+      "github": "GITHUB",
       "githubAriaLabel": "Visit GitHub profile",
-      "linkedin": "LinkedIn",
+      "linkedin": "LINKEDIN",
       "linkedinAriaLabel": "Visit LinkedIn profile"
     },
     "profileSection": {
       "ariaLabel": "Profile Introduction",
-      "name": "Nakaganeku",
+      "name": "A. Nakaganeku",
       "imageAlt": "Ailin Nakaganeku - Frontend Software Developer",
       "titleLine1": "Frontend Software",
       "titleLine2": "Developer"
