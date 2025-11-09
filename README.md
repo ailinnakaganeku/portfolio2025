@@ -1,3 +1,4 @@
+![Preview](/public/ailinnakaganeku.vercel.app.png)
 ### Lighthouse Metrics
 ![Lighthouse Metrics](/public/lighthouse.png)
 ToDo:
